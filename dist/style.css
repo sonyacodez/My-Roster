@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+}
+
+h1 {
+    margin-left: 30vw;
+    font-size: 100px;
+}
+
+input {
+    width: 45vw;
+    height: 5vh;
+    font-size: 30px;
+    margin-left: 21vw;
+    margin-bottom: 10px;
+}
+
+#button {
+    font-size: 30px;
+    display: inline;
+    padding: 2px;
+    border: 5px solid white;
+}
+
+#team-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.player {
+    text-align: center;
+    background-image: url("https://wallpaperbasketball.com/basketball-wallpaper-hd-2181/basketball-wallpaper-hd/");
+    margin: 10px;
+    border: 8px solid orange;
+    border-radius: 15px;
+    /* width: 320px; */
+}
+
+.image {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    width: 280px;
+    height: 203px;
+    margin: auto;
+    border: 5px solid orange;
+    border-radius: 15px;
+}
+
+img {
+    margin: auto;
+    width: 280px;
+    height: 203px;
+    border-radius: 15px;
+}
+
+.names {
+    background-color: orange;
+    font-size: 30px;
+    margin-top: 15px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Roster</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script id="rooster-template" type="text/x-handlebars-template">
+        {{#each myTeamPlayers}}
+            <div class="player">
+                <div>Jersey:{{jersey}}</div>
+                <div>Position:{{pos}}</div>
+                <div class="image">
+                    <img src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}" onerror="this.src='https://res.cloudinary.com/teepublic/image/private/s--xyPxIPPG--/t_Preview/b_rgb:fefeff,c_limit,f_jpg,h_630,q_90,w_630/v1522592513/production/designs/2548742_0.jpg';">
+                </div>
+                <div class="names">{{firstName}} {{lastName}}</div>
+                
+            </div>
+        {{/each}}
+    </script>
+
+    <h1>My Roster</h1>
+
+    <input id="team-input" type="text" placeholder="Which team's players do you want to display?">
+    <div id="button" onclick=displayTeam()>Search</div>
+
+    <div id="team-display"></div>
+
+    <script src="handlebars/dist/handlebars.js"></script>
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
